@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="practica1">
+<head>
+    <meta charset="UTF-8">
+    <title>Practica 1</title>
+</head>
+<body ng-controller="pracCtrl as first">
+
+  <input type="text" ng-model="text"><br>
+  {{text}}
+    
+
+        <h4>{{first.name}}</h4>
+        <h4>{{first.age}}</h4>
+        <h4>{{first.string}}</h4>
+        <h4>{{first.number}}+1={{first.number+1}}</h4>
+        <h4>{{first.number}}/2={{first.number/2}}</h4>
+
+        <button ng-click="first.click()">clickme dude</button>
+
+        <ul>
+            <li ng-repeat="user in first.users">
+                {{user.name}} tiene {{user.age}} años
+            </li>
+        </ul>
+
+
+        <input type="text" ng-model="search.$">
+        <table style="border:1px solid blue;" border="1">
+            <tr ng-repeat="user in first.users | filter : search | orderBy: 'age'" ng-if="user.age<50">
+            <td>{{$index+1}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.age}}</td>
+            <td>{{user.pais}}</td>
+            <td><button ng-click="first.ruco(user)">clickme morro</button></td>
+        </tr>
+        </table>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="palindromo">
+<head>
+	<meta charset="UTF-8">
+	<title>Palindromo</title>
+</head>
+<body ng-controller='palindromoCtrl as p'>
+
+	<input type="text" ng-model="p.texto">
+	<button ng-click='p.validar()'>Validar</button>
+	{{p.result}}
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+	<script src="app/app.js"></script>
+	
+</body>
+</html>

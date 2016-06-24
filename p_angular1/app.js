@@ -7,10 +7,10 @@
 
     function pracCtrl() {
         var first = this;
-        this.name = 'David'
-        this.age = 18
-        this.number = 3
-        this.string = 'hola morros'
+        first.name = 'David'
+        first.age = 18
+        first.number = 3
+        first.string = 'hola morros'
 
         first.users = [
             {name:'raul',age:16,pais:'MX'},

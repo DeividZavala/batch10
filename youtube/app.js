@@ -12,7 +12,7 @@
     function youtubeCtrl($sce) {
         var youtube = this;
         youtube.base = 'https://www.youtube.com/embed/'
-        youtube.video = $sce.trustAsResourceUrl(youtube.base);
+        youtube.video = $sce.trustAsResourceUrl(youtube.base+youtube.id);
     }
 
     angular

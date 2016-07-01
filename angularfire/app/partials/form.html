@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <form class="col m6 offset-m3" ng-submit="$ctrl.add()">
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="first_name" type="text" class="validate" ng-model="$ctrl.name">
+                    <label for="first_name">First Name</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="email" type="email" class="validate" ng-model="$ctrl.email">
+                    <label for="email">Email</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea" ng-model="$ctrl.text"></textarea>
+                    <label for="textarea1">Textarea</label>
+                </div>
+            </div>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+                <i class="material-icons right">send</i>
+            </button>
+        </form>
+    </div>
+</div>

@@ -8,10 +8,16 @@
         function config($routeProvider) {
             $routeProvider
                 .when('/',{
-                    template:'<lista></lista>',
+                    template:'<login></login>',
                 })
                 .when('/agregar',{
                     template:'<agregar></agregar>'
+                })
+                .when('/data',{
+                    template:'<lista></lista>'
+                })
+                .when('/registro',{
+                    template:'<registro></registro>'
                 })
                 .otherwise('/')
         }

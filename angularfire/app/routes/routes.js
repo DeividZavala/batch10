@@ -8,7 +8,7 @@
         function config($routeProvider) {
             $routeProvider
                 .when('/',{
-                    template:'<lista></lista>'
+                    template:'<lista></lista>',
                 })
                 .when('/agregar',{
                     template:'<agregar></agregar>'

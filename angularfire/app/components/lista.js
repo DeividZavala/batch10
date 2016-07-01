@@ -6,7 +6,7 @@
         templateUrl:"app/partials/lista.html"
     }
 
-    listaController.$inject = ['$firebaseArray'];
+    listaController.$inject = ['$firebaseArray']
 
     function listaController($firebaseArray) {
         var lista = this;

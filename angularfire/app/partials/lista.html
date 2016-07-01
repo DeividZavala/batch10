@@ -1,11 +1,15 @@
-<ul class="collapsible" data-collapsible="accordion">
-    <li ng-repeat="d in $ctrl.data">
-      <div class="collapsible-header"><i class="material-icons">whatshot</i>{{d.Nombre}}</div>
-      <div class="collapsible-body">
-          <p>
-              {{d.Message}}
-              <h4>{{d.Correo}}</h4>
-          </p>
-      </div>
-    </li>
-</ul>
+<div class="container">
+    <div class="row">
+        <ul class="collapsible col s6 offset-s3" data-collapsible="accordion">
+            <li ng-repeat="d in $ctrl.data">
+            <div class="collapsible-header"><i class="material-icons">whatshot</i>{{d.Nombre}}</div>
+            <div class="collapsible-body">
+                <p>
+                    {{d.Message}}
+                    <h4>{{d.Correo}}</h4>
+                </p>
+            </div>
+            </li>
+        </ul>
+    </div>
+</div>

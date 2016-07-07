@@ -6,6 +6,7 @@
         .factory('starwarsApi',starwarsApi);
 
     function starwarsApi($resource) {
-        return $resource("http://swapi.co/api/:category/:id")
+    return $resource('http://swapi.co/api/:category/:id')
     }
+
 })();

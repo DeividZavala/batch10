@@ -5,6 +5,11 @@
         .module('starwars')
         .config(config);
 
+
+    function peopleData(starwarsApi){
+        return starwarsApi.query();
+    }
+
     config.$inject = ['$routeProvider'];
 
     function config($routeProvider) {

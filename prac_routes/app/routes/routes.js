@@ -8,10 +8,10 @@
         function david($routeProvider) {
             $routeProvider
                 .when('/',{
-                    template:'<h3>hola</h3>'
+                    template:'<card></card>'
                 })
                 .when('/texto',{
-                    template:'<h1>texto</h1>'
+                    template:'<slider></slider>'
                 })
                 .otherwise({
                     redirectTo:'/'

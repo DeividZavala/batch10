@@ -2,6 +2,6 @@
     'use strict'
 
     angular
-        .module('pracfirebase',["ngRoute","ngResource","firebase"]);
+        .module('pracfirebase',["ngRoute","firebase"]);
 
 })();

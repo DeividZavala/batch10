@@ -9,8 +9,10 @@
     function characterCtrl(marvelData) {
         var char = this;
 
-        char.characters = marvelData.get();
-        console.log('personajes: ',marvelData)
+        char.characters = marvelData.get().$promise.then(function(response){
+            return response.data.results[0]
+        });
+        console.log(char.characters)
     }
 
     angular

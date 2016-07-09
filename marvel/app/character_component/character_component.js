@@ -1,19 +1,24 @@
 (function () {
-    'use strict'
+    'use strict';
 
     var hero = {
-        controller:characterCtrl,
-        templateUrl:"app/character_component/hero.html"
+        templateUrl:"app/character_component/hero.html",
+        controller:characterCtrl
     }
 
+    characterCtrl.$inject = ['marvelData'];
     function characterCtrl(marvelData) {
         var char = this;
-
-        char.characters = marvelData.get();
-        console.log('personajes: ',marvelData)
+        char.superheroe = null;
+        
+        char.characters = marvelData.get()
+            .$promise.then(function(response){
+                char.superheroe = response.data.results;
+                console.log(char.superheroe);
+        });
     }
 
     angular
         .module('marvel')
-        .component('hero',hero);
+        .component('hero', hero);
 })();

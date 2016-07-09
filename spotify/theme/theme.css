@@ -1,0 +1,93 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Trebuchet MS", Helvetica;
+}
+* .spotify-player {
+  background: #000000;
+  border: 1px solid #666666;
+  width: 400px;
+  margin: 10px;
+  padding: 4px;
+  border-radius: 10px;
+}
+* .spotify-player form input {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 76%;
+  border: 1px solid #888;
+  padding: 1% 3%;
+  height: 20px;
+  float: left;
+  font-size: 18px;
+  color: #444;
+}
+* .spotify-player form input:focus {
+  outline: none;
+}
+* .spotify-player form button {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 20px;
+  font-size: 10px;
+  background: #85B923;
+  border: 1px solid #678d1d;
+  width: 17.5%;
+  text-align: center;
+  height: 29px;
+}
+* .spotify-player form:after {
+  display: block;
+  content: " ";
+  clear: both;
+}
+* .spotify-player .player .results {
+  font-size: 9px;
+  width: 50%;
+  float: left;
+  color: #a3a3a3;
+  height: 200px;
+  overflow: auto;
+}
+* .spotify-player .player .results .song {
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #666;
+}
+* .spotify-player .player .results .song span {
+  display: block;
+}
+* .spotify-player .player .results .song span.title {
+  font-size: 11px;
+  color: #FFFFFF;
+}
+* .spotify-player .player .results .song:last-child {
+  border: none;
+}
+* .spotify-player .player .song-detail {
+  float: left;
+  padding: 2%;
+  width: 46%;
+  font-size: 10px;
+  color: white;
+}
+* .spotify-player .player .song-detail .header img {
+  margin-right: 10px;
+  float: left;
+}
+* .spotify-player .player .song-detail .header span {
+  color: #999;
+  font-size: 9px;
+  display: block;
+}
+* .spotify-player .player .song-detail .header span.title {
+  color: #FFF;
+  font-size: 11px;
+}
+* .spotify-player .player:after {
+  clear: both;
+  content: " ";
+  display: block;
+}
+Status API Training Shop Blog About

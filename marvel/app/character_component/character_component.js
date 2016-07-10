@@ -2,17 +2,21 @@
     'use strict'
 
     var hero = {
+        templateUrl:"app/character_component/hero.html",
         controller:characterCtrl,
-        templateUrl:"app/character_component/hero.html"
     }
 
     function characterCtrl(marvelData) {
         var char = this;
 
-        char.characters = marvelData.get().$promise.then(function(response){
-            return response.data.results[0]
-        });
-        console.log(char.characters)
+        char.superheros = null;
+
+        marvelData.get()
+        .$promise
+            .then(function(response){
+                char.superheros = response.data.results;
+                console.log(char.superhero)
+            })
     }
 
     angular

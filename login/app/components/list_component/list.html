@@ -1,0 +1,15 @@
+  <div class="container">
+      <div class="row">
+          <ul class="collapsible col s6 offset-s3" data-collapsible="accordion">
+            <li ng-repeat="d in $ctrl.data">
+            <div class="collapsible-header"><i class="material-icons">filter_drama</i>{{d.nombre}}</div>
+            <div class="collapsible-body">
+                <p>
+                    <h5>{{d.correo}}</h5>
+                    <h6>{{d.message}}</h6>
+                </p>
+            </div>
+            </li>
+        </ul>
+      </div>
+  </div>

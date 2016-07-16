@@ -1,0 +1,18 @@
+<div class="row">
+        <div class="col s12 m4 " ng-repeat="h in hero.superheros">
+          <div class="card">
+            <div class="card-image">
+              <img ng-src="{{h.thumbnail.path}}.{{h.thumbnail.extension}}">
+              <span class="card-title">{{h.name}}</span>
+            </div>
+            <div class="card-content">
+              <p ng-if="h.description">
+                  {{h.description}}
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+</div>

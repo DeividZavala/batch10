@@ -1,0 +1,23 @@
+$color-div: #E91E63
+=border-radius($radius)
+    -webkit-border-radius: $radius
+    -moz-border-radius: $radius
+    -ms-border-radius: $radius
+    border-radius: $radius
+*
+    padding: 0
+    margin: 0
+body
+    background: #00BCD4
+            
+main
+    section
+        padding: 0% 10%
+        article
+            margin-bottom: 2% 
+            h2
+                color: $color-div
+            p
+                background: white
+                padding: 2%
+                +border-radius(3px)

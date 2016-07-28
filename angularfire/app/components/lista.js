@@ -21,7 +21,11 @@
 
     }
 
+
+
     angular
         .module('pracfirebase')
-        .component('lista',lista);
+        .component('listaResultado',lista)
+        
 })();
+

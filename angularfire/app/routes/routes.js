@@ -14,7 +14,7 @@
                     template:'<agregar></agregar>'
                 })
                 .when('/data',{
-                    template:'<lista></lista>'
+                    template:'<lista></lista><directiva-prueba></directiva-prueba>'
                 })
                 .when('/registro',{
                     template:'<registro></registro>'
